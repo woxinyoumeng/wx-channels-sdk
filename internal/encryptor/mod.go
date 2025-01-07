@@ -7,7 +7,7 @@ import (
 	"encoding/base64"
 	"encoding/binary"
 	"errors"
-	"github.com/woxinyoumeng/wx-channel-sdk/internal/encryptor/pkcs7"
+	"github.com/woxinyoumeng/wx-channels-sdk/internal/encryptor/pkcs7"
 	"io"
 )
 

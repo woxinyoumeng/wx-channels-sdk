@@ -2,8 +2,8 @@ package channels
 
 import (
 	"errors"
-	"github.com/woxinyoumeng/wx-channel-sdk/apis"
-	"github.com/woxinyoumeng/wx-channel-sdk/callbacks"
+	"github.com/woxinyoumeng/wx-channels-sdk/apis"
+	"github.com/woxinyoumeng/wx-channels-sdk/callbacks"
 )
 
 // 微信视频号 sdk 调用入口

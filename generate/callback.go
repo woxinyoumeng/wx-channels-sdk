@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"github.com/iancoleman/strcase"
 	"github.com/tidwall/gjson"
-	"github.com/woxinyoumeng/wx-channel-sdk/generate/tool"
+	"github.com/woxinyoumeng/wx-channels-sdk/generate/tool"
 	"io/ioutil"
 	"os"
 	"strings"

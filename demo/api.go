@@ -2,8 +2,8 @@ package demo
 
 import (
 	"fmt"
-	channels "github.com/woxinyoumeng/wx-channel-sdk"
-	"github.com/woxinyoumeng/wx-channel-sdk/apis"
+	channels "github.com/woxinyoumeng/wx-channels-sdk"
+	"github.com/woxinyoumeng/wx-channels-sdk/apis"
 )
 
 // 调用 视频号API 示例

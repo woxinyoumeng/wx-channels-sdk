@@ -3,8 +3,8 @@ package demo
 import (
 	"fmt"
 	"github.com/labstack/echo/v4"
-	channels "github.com/woxinyoumeng/wx-channel-sdk"
-	"github.com/woxinyoumeng/wx-channel-sdk/callbacks"
+	channels "github.com/woxinyoumeng/wx-channels-sdk"
+	"github.com/woxinyoumeng/wx-channels-sdk/callbacks"
 )
 
 // 接收视频号回调事件示例
