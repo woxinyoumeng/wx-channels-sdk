@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/go-redis/redis/v8"
-	"github.com/zsmhub/wx-channels-sdk/apis"
+	"github.com/woxinyoumeng/wx-channel-sdk/apis"
 	"log"
 	"time"
 )

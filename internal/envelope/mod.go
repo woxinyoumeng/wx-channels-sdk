@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"encoding/xml"
 	"errors"
-	"github.com/zsmhub/wx-channels-sdk/internal/encryptor"
-	"github.com/zsmhub/wx-channels-sdk/internal/signature"
+	"github.com/woxinyoumeng/wx-channel-sdk/internal/encryptor"
+	"github.com/woxinyoumeng/wx-channel-sdk/internal/signature"
 	"io"
 	"net/url"
 )

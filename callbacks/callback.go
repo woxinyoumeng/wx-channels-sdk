@@ -2,8 +2,8 @@ package callbacks
 
 import (
 	"errors"
-	"github.com/zsmhub/wx-channels-sdk/internal/envelope"
-	"github.com/zsmhub/wx-channels-sdk/internal/signature"
+	"github.com/woxinyoumeng/wx-channel-sdk/internal/envelope"
+	"github.com/woxinyoumeng/wx-channel-sdk/internal/signature"
 	"io/ioutil"
 	"net/http"
 	"net/url"
