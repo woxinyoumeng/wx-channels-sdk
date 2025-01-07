@@ -24,17 +24,18 @@ func (x ReqFundsGetfundsflowdetail) intoBody() ([]byte, error) {
 type RespFundsGetfundsflowdetail struct {
 	CommonResp
 	FundsFlow struct {
+		FlowId          string `json:"flow_id"`
+		FundsType       int    `json:"funds_type"`
+		FlowType        int    `json:"flow_type"`
 		Amount          int    `json:"amount"`
 		Balance         int    `json:"balance"`
-		FlowID          string `json:"flow_id"`
-		FlowType        int    `json:"flow_type"`
-		FundsType       int    `json:"funds_type"`
 		RelatedInfoList []struct {
-			AftersaleID   string `json:"aftersale_id"`
-			OrderID       string `json:"order_id"`
 			RelatedType   int    `json:"related_type"`
-			TransactionID string `json:"transaction_id"`
+			OrderId       string `json:"order_id"`
+			TransactionId string `json:"transaction_id"`
 		} `json:"related_info_list"`
+		BookkeepingTime string `json:"bookkeeping_time"`
+		Remark          string `json:"remark"`
 	} `json:"funds_flow"`
 }
 
