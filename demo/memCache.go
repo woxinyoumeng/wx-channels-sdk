@@ -19,14 +19,14 @@ func (w DcsTokenByMem) Get(cacheKey string) apis.TokenInfo {
 	var tokenInfo apis.TokenInfo
 	get, err := ca.Get(ctx, cacheKey)
 	if err != nil {
-		log.Println(err)
+		log.Println("cache get  err", err)
 		return tokenInfo
 	}
 	if get != nil {
 		data := get.(string)
 		err = json.Unmarshal([]byte(data), &tokenInfo)
 		if err != nil {
-			log.Println(err)
+			log.Println("cache set err", err)
 			return tokenInfo
 		}
 	}
@@ -45,6 +45,7 @@ func (w DcsTokenByMem) Del(cacheKey string) error {
 func (w DcsTokenByMem) Lock(cacheKey string, ttl time.Duration) bool {
 	err := ca.Put(ctx, cacheKey, "1", ttl)
 	if err != nil {
+		log.Println("cache lock err", err)
 		return false
 	}
 	return true
