@@ -32,6 +32,8 @@ type RespFundsGetfundsflowdetail struct {
 		RelatedInfoList []struct {
 			RelatedType   int    `json:"related_type"`
 			OrderId       string `json:"order_id"`
+			AfterSaleId   string `json:"aftersale_id"`
+			WithdrawId    string `json:"withdraw_id"`
 			TransactionId string `json:"transaction_id"`
 		} `json:"related_info_list"`
 		BookkeepingTime string `json:"bookkeeping_time"`
